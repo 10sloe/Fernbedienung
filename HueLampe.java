@@ -29,7 +29,7 @@ class HueLampe
     }
 
     /*
-     * Setzt den Farbwert der Lampe Nr. 1
+     * Setzt den Farbwert der Lampe
      * Werte zwischen 0 und 65535
      */
     void setHue(int hue)
@@ -39,7 +39,7 @@ class HueLampe
     } 
 
     /*
-     * Setzt die Helligkeit der Lampe Nr. 1
+     * Setzt die Helligkeit der Lampe
      * Werte zwischen 1 und 254
      */
     void setBri(int wert)
@@ -65,7 +65,7 @@ class HueLampe
     }
 
     /*
-     * Setzt die Sättigung der Lampe Nr. 1
+     * Setzt die Sättigung der Lampe 
      * Werte zwischen 0 und 254
      */
     void setSat(int wert)
@@ -81,6 +81,11 @@ class HueLampe
     void setNummer(int wert)
     {
         nummer = wert;
+    }
+    
+    void init()
+    {
+        // tue nichts
     }
 
     /*
