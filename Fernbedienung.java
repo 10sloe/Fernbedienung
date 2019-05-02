@@ -17,7 +17,7 @@ public class Fernbedienung {
     public Fernbedienung()
     {
         lampe = new Lampe();
-        // lampe = new HueLampe();
+        //lampe = new HueLampe("10.10.83.204");
 
     }
 

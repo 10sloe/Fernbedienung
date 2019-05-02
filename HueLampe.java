@@ -5,7 +5,7 @@ import javafx.concurrent.*;
 
 class HueLampe
 {
-    String bridgeIP = "10.10.84.0";    // Adresse der HueBridge im Schulnetzwerk
+    String bridgeIP = "10.10.83.204";    // Adresse der HueBridge im Schulnetzwerk
     String username = "ZWKT3UaornxBVQks5HpDli8V1Nmbqi9SE48p8bRT";  //Name eines in der Hue-Bridge registrierten Users
     int nummer = 1;
     String adresse = "http://"+bridgeIP+"/api/"+username + "/lights/" + nummer;  // Adresse der Lampe
@@ -14,6 +14,11 @@ class HueLampe
     /*
      * Gibt alle Informationen über die Lampe auf der Konsole aus
      */
+    public HueLampe(String ip)
+    {
+        bridgeIP = ip;
+    }
+
     void infosAusgeben()
     {
         get(adresse, this);
@@ -83,7 +88,7 @@ class HueLampe
         nummer = wert;
         adresse = "http://"+bridgeIP+"/api/"+username + "/lights/" + nummer;
     }
-    
+
     void init()
     {
         // tue nichts
