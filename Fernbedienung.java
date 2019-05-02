@@ -61,6 +61,6 @@ public class Fernbedienung {
     @FXML
     void initialize() {
         lampe.init();
-        //lampe.infosAusgeben();
+        lampe.infosAusgeben();
     }
 }

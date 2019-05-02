@@ -81,6 +81,7 @@ class HueLampe
     void setNummer(int wert)
     {
         nummer = wert;
+        adresse = "http://"+bridgeIP+"/api/"+username + "/lights/" + nummer;
     }
     
     void init()
